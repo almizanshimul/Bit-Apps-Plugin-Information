@@ -25,7 +25,7 @@ bitPlugins.forEach((plugin) => {
             bitTotalDownload += totalDownload
 
             let boxContent = ` <div class="box">
-            <img src=${img} alt="" width="80">
+            <img src=${img} alt=${name} width="80" height="80">
                     <div class="text-content">
                         <h2>${name}</h2>
                         <p>Total Review: ${totalReview}</p>
