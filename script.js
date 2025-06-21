@@ -42,8 +42,8 @@ bitPlugins.forEach((plugin) => {
             document.getElementById("fiveReview").innerHTML = bitFiveStarReview
             document.getElementById("active").innerHTML = bitTotalActive
             document.getElementById("download").innerHTML = bitTotalDownload
-            document.getElementById("shortActive").innerHTML = formatNumber(bitTotalActive)
-            document.getElementById("shortDownload").innerHTML = formatNumber(bitTotalDownload)
+            document.getElementById("shortActive").innerHTML = ", " + formatNumber(bitTotalActive)
+            document.getElementById("shortDownload").innerHTML = ", " + formatNumber(bitTotalDownload)
 
 
         })
