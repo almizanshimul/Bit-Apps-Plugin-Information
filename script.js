@@ -66,6 +66,7 @@ Promise.all(
         let fiveStarReview = json.ratings[5];
         let totalActive = json.active_installs;
         let totalDownload = json.downloaded;
+        let homepage = json.homepage;
 
         bitTotalReview += totalReview;
         bitFiveStarReview += fiveStarReview;
@@ -81,6 +82,10 @@ Promise.all(
           <p>5Star Review: ${fiveStarReview}</p>
           <p>Total Active: ${totalActive}</p>
           <p>Total Download: ${totalDownload}</p>
+          <div class="btn-list">
+            <a href=${homepage} target="_blank">Plugin Page</a>
+            <a href="https://wordpress.org/plugin/${json.slug}" target="_blank">WP Page</a>
+           </div>
         </div>
       </div>
     `;
