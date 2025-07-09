@@ -96,6 +96,31 @@ section {
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
 }
+
+
+/*Tablet Responsive*/
+@media only screen and (max-width: 1119px) {
+  .section-container .row .bitContent {
+    flex-wrap: wrap;
+  }
+  .section-container {
+    width: 100%;
+  }
+  .section-container .row.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Mobile Responsive*/
+@media only screen and (max-width: 623px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .section-container .row.grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @keyframes loading {
   0% {
     background-position: 200% 0;
