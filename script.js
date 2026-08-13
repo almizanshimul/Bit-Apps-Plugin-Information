@@ -1,4 +1,4 @@
-const bitPlugins = ["bit-form", "bit-integrations", "bit-assist", "bit-social", "bit-pi", "bit-smtp", "file-manager"]
+const bitPlugins = ["bit-form", "bit-integrations", "bit-assist", "bit-social", "bit-pi", "bit-smtp", "file-manager", "bit-crm-sales-marketing-automation"]
 
 let cardParent = document.getElementById("cardParent")
 let bitTotalReview = 0;
