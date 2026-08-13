@@ -60,7 +60,7 @@ Promise.all(
 ).then(dataArray => {
     cardParent.innerHTML = "";
     dataArray.forEach(json => {
-        let name = json.split(" ").slice(0, 2).join(" ")
+        let name = json.name.split(" ").slice(0, 2).join(" ")
         let img = json.icons["1x"];
         let totalReview = json.num_ratings;
         let fiveStarReview = json.ratings[5];
